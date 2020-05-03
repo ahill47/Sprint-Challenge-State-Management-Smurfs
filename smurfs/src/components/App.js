@@ -24,8 +24,8 @@ function App() {
 
   return (
     <SmurfContext.Provider value={{ addSmurf, smurfs }}>
-      <div className="App">
-      <h1>Smurfville</h1>
+      <div style={{border:"5px dotted blue", width:'50%', margin:'0 auto'}} className="App">
+      <h1 style={{color:"blue", fontSize:"48px", fontFamily:"Gaegu", borderBottom:'5px dotted blue', paddingBottom:'5%'}}>Smurfville</h1>
         <SmurfsList/>
         <SmurfsForm/>
         

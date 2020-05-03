@@ -19,7 +19,7 @@ function SmurfsForm() {
         setNewSmurf({...newSmurf, [e.target.name]: e.target.value})
     }
     const handleSubmit=(e)=>{
-        e.preventDefault();// dont know if i needed this
+        e.preventDefault();// know I know why I need this 
         addSmurf(newSmurf)
     }
     // Button styling
@@ -33,25 +33,25 @@ function SmurfsForm() {
         padding: '14px 40px'
     }
     return (
-        <div className="smurfForm">
-            <h2> Wanna add a new Smurf</h2>
+        <div style={{color:'blue'}} className="smurfForm">
+            <h2> Want to add a new Smurf:</h2>
             <form onSubmit = {e => handleSubmit(e)}>
                 <input
                     type='text'
                     name='name'
-                    placeholder='name'
+                    placeholder='Name'
                     value={newSmurf.name}
                     onChange={e => handleChange(e)}/> <br/><br/>
                  <input
                     type='text'
                     name='age'
-                    placeholder='age'
+                    placeholder='Age'
                     value={newSmurf.age}
                     onChange={e => handleChange(e)}/> <br/><br/>
                 <input
                     type='text'
                     name='height'
-                    placeholder='height'
+                    placeholder='Height'
                     value={newSmurf.height}
                     onChange={e => handleChange(e)}/> <br/><br/>
 
