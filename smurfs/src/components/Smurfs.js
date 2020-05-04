@@ -5,10 +5,13 @@ const Smurfs =(props) => {
     
     return (
 
-        <div className="smurfs">
+        <div style={{color:'yellow',textShadow: "-1px -1px 0 #0000FF, 1px -1px 0 #0000FF, -1px 1px 0 #0000FF, 1px 1px 0 #0000FF"}} className="smurfs">
         
             <h2 > Name: {props.smurf.name}</h2>
-            <p> Age: {props.smurf.age} Height: {props.smurf.height}</p>
+            
+            <p> Age: {props.smurf.age}<br></br>
+             Height: {props.smurf.height}
+             </p>
             
            
         </div>
